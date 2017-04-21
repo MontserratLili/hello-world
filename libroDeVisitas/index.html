@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Libro de Visitas</title>
+    <link rel="stylesheet" type="text/css" href="libro.css" media="screen" />
+  </head>
+  <body>
+    <div class="titulo"></div>
+    <h1>Articulos</h1>
+    <p class="holaMundo">Hola Mundo</p>
+    <hr color="blue" size="3" width="1300">
+    <div class="nuevaHistoria"></div>
+    <p>Nueva Historia</p>
+    <hr>
+    <hr color="blue" size="10" width="1300">//como ponerle texto adentro
+    <hr>
+    <div class="formulario"></div>
+    <p>Crear Artículo</p>
+    <button class="botones" id="grande" onclick="grande(); return false">Texto Grande</button>
+    <button class="botones" id="mediano" onclick="mediano(); return false">Texto Mediano</button>
+    <button class="botones" id="chico" onclick="chico(); return false">Texto Chico</button>
+    <button class="botones" id="color" onclick="colorLetra();">Color de Texto</button>
+    <button class="botones" id="fondo" onclick="colorFondo();">Color de Fondo</button>
+    <button class="botones" id="izquierda" onclick="izquierda();">Alinear Izquierda</button>
+    <button class="botones" id="centrar" onclick="centrar();">Centrar</button>
+    <button class="botones" id="derecha" onclick="derecha();">Alinear Derecha</button><br>
+      <br><textarea id="cajaDeTexto" oninput="comentar();"></textarea>
+      <hr>
+    <div class="contenido"></div>
+    <h1>Contenido</h1>
+    <p id="alineacion"><output id="mostrar" oninput="comentar();"></output></p><br>
+      <button id="enviar" onclick="enviar();">Enviar</button>
+      <p id="enviado"></p>
+    <script src="libro.js"></script>
+  </body>
+</html>
